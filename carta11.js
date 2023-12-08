@@ -5,6 +5,7 @@ while (T.length < 40) {
         T.push(newInt);
     }
 }
+var count = 0;
 
 console.log(T);
 var TV ;
@@ -57,6 +58,8 @@ function f1(){
     imag2.alt = "fff";
     imag2.id = "ma921";
     setTimeout(() => {
+
+        document.getElementsByName("body")[0].removeChild(document.getElementById("ma"));
         
         gif3.id = "gif3";
         gif3.src = "./im/gif3.gif";
@@ -193,5 +196,22 @@ function playmusic(){
     let bodyy = document.getElementsByTagName("body");
     bodyy[0].removeChild(document.getElementsByTagName("h1")[0]);
     setTimeout(f1 , 9500);
+}
+function fun(){
+    
+    setTimeout(() =>{
+        count ++;
+    },1000);
+    if(count > 3){
+        var ma = document.createElement("img");
+        ma.id="ma";
+        ma.src="./img/nuit.svg" ;
+        ma.alt="t";
+        document.getElementsByTagName("body")[0].appendChild(ma);
+    }
+}
+function fun2(){
+    
+    count = 0;
 }
 

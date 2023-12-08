@@ -1,0 +1,89 @@
+
+body{
+    background-image: url(./im/23678.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carta{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: 1%;
+    height: 180px;
+    width: 131px;
+    
+}
+.lkol{
+    background-image: url("./img/tapis1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    margin: 0%;
+}
+@keyframes frame1{
+    from {
+        transform:  rotate(90deg) translateY(0);
+        
+    }
+    to {
+        transform:  rotate(0deg) translateY(-195px);
+        
+    }
+}
+@keyframes frame2{
+    from {
+        transform: translate(0, 0) rotate(90deg);
+    }
+    to {
+        transform: translate(-150px, 195px) rotate(0deg);
+    }
+}
+#ma911{
+    animation-name: frame1;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#ma921{
+    animation-name: frame2;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+h1 {
+    animation-name: frame3;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+h1:hover{
+    cursor: pointer;
+}
+@keyframes frame3{
+    0% {
+        color: #e08e07;
+    }
+    50% {
+        color: #000000;
+    }
+    100%{
+        color: #e08e07;
+    }
+}
+#cur{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 131px;
+  height: 180px;
+  background-size: cover;
+  pointer-events: none;
+}
